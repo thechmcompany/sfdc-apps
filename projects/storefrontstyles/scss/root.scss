@@ -1,0 +1,16 @@
+@import 'theme';
+
+:root {
+  @each $color, $value in $theme-colors {
+    --cx-g-color-#{$color}: #{$value};
+  }
+
+  --cx-g-direction: #{$direction};
+
+  --cx-g-transition-duration: 0.5s;
+  --cx-g-animation-duration: 1s;
+
+  --cx-g-border-radius: 1em;
+
+  --cx-border-style: solid;
+}
